@@ -2,6 +2,9 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.app.Activity;
+import android.content.Intent
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,8 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        nextPageBtn.setOnClickListener(
-//
-//        )
+        val nextPageBtn : Button = findViewById(R.id.button1)
+        nextPageBtn.setOnClickListener{
+            val intent = Intent(this, SecondPageActivity :: class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -22,29 +22,30 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/physalis-4770292_640"
+                android:src="@drawable/physalis_4770292_640"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/ic_launcher_background"/>
+                app:srcCompat="@drawable/ic_launcher_background"
+                android:contentDescription="TODO" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_height="fill_parent"
             android:layout_width="fill_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textSize="40sp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Witaj świecie!"
+                android:textSize="40sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -52,17 +53,23 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.706" />
 
-            <Button
-                android:id="@+id/nextPageBtn"
-                android:layout_width="209dp"
-                android:layout_height="62dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="30dp"
-                android:text="Dalej"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.517"
-                app:layout_constraintStart_toStartOf="parent" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:text="Dalej"
+                    />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
